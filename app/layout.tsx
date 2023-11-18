@@ -18,19 +18,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <body className={inter.className}>
-        <NextUIProvider>
-          <div className="flex flex-col max-h-screen">
-            <Nav />
-          </div>
-          <div className="flex-grow overflow-y-auto bg-page text-default-text">
-            {children}
-          </div>
-          <div>
-            <Footer />
-          </div>
-        </NextUIProvider>
+        <div className="flex flex-col max-h-screen">
+          <Nav />
+        </div>
+        <div className="flex-grow overflow-y-auto bg-page text-default-text">
+          {children}
+        </div>
+        <div>
+          <Footer />
+        </div>
       </body>
     </html>
   );
