@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Nav from "./(components)/Nav";
 import Footer from "./(components)/Footer";
+import { NextUIProvider } from "@nextui-org/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,16 +20,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className='flex flex-col max-h-screen'>
-          <Nav />
-        </div>
-        <div className="flex-grow overflow-y-auto bg-page text-default-text">
-        {children}
-        </div>
-        <div>
-          <Footer />
-        </div>
-        </body>
+        <NextUIProvider>
+          <div className="flex flex-col max-h-screen">
+            <Nav />
+          </div>
+          <div className="flex-grow overflow-y-auto bg-page text-default-text">
+            {children}
+          </div>
+          <div>
+            <Footer />
+          </div>
+        </NextUIProvider>
+      </body>
     </html>
   );
 }
