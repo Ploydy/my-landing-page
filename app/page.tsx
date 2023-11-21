@@ -4,7 +4,7 @@ import Image from "next/image";
 const Dashboard = () => {
   return (
     <>
-      <section className="bg-[#FCF8F1] bg-opacity-30 py-10 sm:py-16 lg:py-24">
+      <section className=" bg-slate-700 py-10 sm:py-16 lg:py-24">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
             <div>
@@ -19,12 +19,12 @@ const Dashboard = () => {
               </p>
 
               <a
-                href="#"
+                href="/SignUp"
                 title=""
-                className="inline-flex items-center px-6 py-4 mt-8 font-semibold text-black transition-all duration-200 bg-yellow-300 rounded-full lg:mt-16 hover:bg-yellow-400 focus:bg-yellow-400"
+                className="inline-flex items-center px-6 py-4 mt-8 font-semibold text-black transition-all duration-200 bg-slate-300 rounded-full lg:mt-16 hover:bg-slate-400 focus:bg-slate-400"
                 role="button"
               >
-                Join for free
+                Sign Up for free
                 <svg
                   className="w-6 h-6 ml-8 -mr-2"
                   xmlns="http://www.w3.org/2000/svg"
@@ -40,12 +40,12 @@ const Dashboard = () => {
                 </svg>
               </a>
 
-              <p className="mt-5 text-gray-600">
+              <p className="mt-5 text-black">
                 Already joined us?{" "}
                 <a
-                  href="#"
+                  href="/SignIn"
                   title=""
-                  className="text-black transition-all duration-200 hover:underline"
+                  className="text-blue-500 transition-all duration-200 hover:underline"
                 >
                   Log in
                 </a>
@@ -67,13 +67,13 @@ const Dashboard = () => {
         </div>
       </section>
 
-      <section className="py-12 bg-white sm:py-16 lg:py-20">
+      <section className="py-12  bg-slate-600 sm:py-16 lg:py-20">
         <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
           <div className="max-w-md mx-auto text-center">
             <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl">
               Our featured items
             </h2>
-            <p className="mt-4 text-base font-normal leading-7 text-gray-600">
+            <p className="mt-4 text-base font-normal leading-7 text-black">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus
               faucibus massa dignissim tempus.
             </p>
@@ -311,7 +311,7 @@ const Dashboard = () => {
                   <p className="text-xs font-bold text-gray-900 sm:text-sm md:text-base">
                     $49.00
                   </p>
-                  <del className="mt-0.5 text-xs sm:text-sm font-bold text-gray-500">
+                  <del className="mt-0.5 text-xs sm:text-sm font-bold text-gray-400">
                     {" "}
                     $99.00{" "}
                   </del>
@@ -397,7 +397,7 @@ const Dashboard = () => {
         </div>
       </section>
 
-      <section className="py-12 bg-white sm:py-16 lg:py-20">
+      <section className="py-12  bg-slate-700 sm:py-16 lg:py-20">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl font-pj">
@@ -417,7 +417,7 @@ const Dashboard = () => {
               <p className="mt-5 text-lg font-bold text-gray-900 sm:text-xl sm:mt-8 font-pj">
                 Jerome Bell
               </p>
-              <p className="mt-2 text-base font-normal text-gray-600 font-pj">
+              <p className="mt-2 text-base font-normal text-gray-400 font-pj">
                 Co founder, Chairman, Executive Director
               </p>
             </div>
@@ -433,7 +433,7 @@ const Dashboard = () => {
               <p className="mt-5 text-lg font-bold text-gray-900 sm:text-xl sm:mt-8 font-pj">
                 Jerome Bell
               </p>
-              <p className="mt-2 text-base font-normal text-gray-600 font-pj">
+              <p className="mt-2 text-base font-normal text-gray-400 font-pj">
                 Co founder, Chairman, Executive Director
               </p>
             </div>
@@ -449,7 +449,7 @@ const Dashboard = () => {
               <p className="mt-5 text-lg font-bold text-gray-900 sm:text-xl sm:mt-8 font-pj">
                 Jerome Bell
               </p>
-              <p className="mt-2 text-base font-normal text-gray-600 font-pj">
+              <p className="mt-2 text-base font-normal text-gray-400 font-pj">
                 Co founder, Chairman, Executive Director
               </p>
             </div>
@@ -465,7 +465,7 @@ const Dashboard = () => {
               <p className="mt-5 text-lg font-bold text-gray-900 sm:text-xl sm:mt-8 font-pj">
                 Jerome Bell
               </p>
-              <p className="mt-2 text-base font-normal text-gray-600 font-pj">
+              <p className="mt-2 text-base font-normal text-gray-400 font-pj">
                 Co founder, Chairman, Executive Director
               </p>
             </div>
